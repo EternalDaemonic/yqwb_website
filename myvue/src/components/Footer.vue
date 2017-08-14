@@ -1,35 +1,11 @@
 <template>
 	<div class="footer">
 		<div class="container">
-			<div class="footer-top-at">
-				<div class="col-md-6 col-xs-6 amet-sed">
-					<h4>更多信息</h4>
-					<ul class="nav-bottom">
-						<li>
-							<a href="#">如何订购</a>
-						</li>
-						<li>
-							<a href="#">常见问题</a>
-						</li>
-						<li>
-							<a href="contact.html">位置</a>
-						</li>
-						<li>
-							<a href="#">配送</a>
-						</li>
-					</ul>
+				<div class="col-md-6 col-xs-6">
+          <span class="footer1">版权所有@1758定制专家</span><br>
+          <span class="footer2">联系方式:021-60546066</span>
 				</div>
-				<div class="col-md-6 col-xs-6 amet-sed ">
-					<h4>联系我们</h4>
-					<p>QQ:******</p>
-					<p>微信:*******</p>
-					<p>电话: +12 34 995 0792</p>
-					
-				</div>
-				<div class="clearfix"> </div>
-			</div>
 		</div>
-		
 	</div>
 </template>
 
@@ -44,10 +20,17 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.footer{
-		padding: 10px;
+    font-family: "宋体";
+    background-color: gray;
+    font-size: 1em;
 	}
+  .container{
+    margin: 0;
+    padding: 0;
+  }
+
 	ul{
 		list-style: none;
 	}
