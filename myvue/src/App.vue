@@ -44,6 +44,9 @@
 </script>
 
 <style lang="scss" scoped type="text/css">
+.footer{
+	clear: both;
+}
 	* {
 		padding: 0;
 		margin: 0;
