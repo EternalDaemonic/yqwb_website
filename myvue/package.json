@@ -12,6 +12,7 @@
   "dependencies": {
     "svg-sprite-loader": "^3.1.6",
     "vue": "^2.3.3",
+    "vue-coverflow": "^2.0.1",
     "vue-router": "^2.6.0"
   },
   "devDependencies": {

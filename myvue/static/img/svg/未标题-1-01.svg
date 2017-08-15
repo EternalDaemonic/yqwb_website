@@ -1,18 +1,20 @@
-<template>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
 <g>
-	<path v-bind:fill=color1 @click="todo(id1)" stroke="#231815" stroke-miterlimit="10" d="M133.892,445.756c0,0,5.232,2.27,14.898,5.324
+	<path fill="purple" stroke="#231815" stroke-miterlimit="10" d="M133.892,445.756c0,0,5.232,2.27,14.898,5.324
 		c9.666,3.053,12.357,3.053,12.357,3.053l42.885-118.685l-43.34,7.021C145.886,397.156,133.892,445.756,133.892,445.756z"/>
-	<path v-bind:fill=color1 @click="todo(id1)" stroke="#231815" stroke-width="0.75" stroke-miterlimit="10" d="M225.333,275.778l-48.148,7.801
+	<path fill="green" stroke="#231815" stroke-width="0.75" stroke-miterlimit="10" d="M225.333,275.778l-48.148,7.801
 		c-5.578,19.12-11.213,39.392-16.492,58.891l43.34-7.021l17.387-48.124L225.333,275.778z"/>
-	<path v-bind:fill=color1 @click="todo(id1)" stroke="#231815" stroke-miterlimit="10" d="M212.241,191.708c-6.357-0.034-20.506,41.994-35.057,91.871
+	<path fill="blue" stroke="#231815" stroke-miterlimit="10" d="M212.241,191.708c-6.357-0.034-20.506,41.994-35.057,91.871
 		l48.148-7.801l23.563-69.526C248.896,206.252,222.679,191.764,212.241,191.708z"/>
-	<path v-bind:fill=color2 @click="todo(id2)" stroke="#231815" stroke-miterlimit="10" d="M434.587,342.47l-43.338-7.021l42.883,118.685
+	<path fill="pink" stroke="#231815" stroke-miterlimit="10" d="M434.587,342.47l-43.338-7.021l42.883,118.685
 		c0,0,2.691,0,12.357-3.053c9.668-3.055,14.898-5.324,14.898-5.324S449.394,397.156,434.587,342.47z"/>
-	<path v-bind:fill=color2 @click="todo(id2)" stroke="#231815" stroke-width="0.75" stroke-miterlimit="10" d="M391.249,335.448l43.338,7.021
+	<path fill="white" stroke="#231815" stroke-width="0.75" stroke-miterlimit="10" d="M391.249,335.448l43.338,7.021
 		c-5.279-19.499-10.914-39.771-16.492-58.891l-48.148-7.801l3.914,11.546L391.249,335.448z"/>
-	<path v-bind:fill=color2 @click="todo(id2)" stroke="#231815" stroke-miterlimit="10" d="M383.038,191.708c6.357-0.034,20.506,41.994,35.057,91.871
+	<path fill="black" stroke="#231815" stroke-miterlimit="10" d="M383.038,191.708c6.357-0.034,20.506,41.994,35.057,91.871
 		l-48.148-7.801l-23.563-69.526C346.384,206.252,372.603,191.764,383.038,191.708z"/>
 	<g>
 		<defs>
@@ -34,10 +36,10 @@
 			<rect x="198.686" y="241.876" transform="matrix(0.1595 0.9872 -0.9872 0.1595 441.7641 35.2407)" clip-path="url(#SVGID_2_)" fill="#231815" stroke="#231815" stroke-width="0.25" stroke-miterlimit="10" width="3" height="70.35"/>
 		
 			<rect x="198.579" y="244.697" transform="matrix(0.1592 0.9873 -0.9873 0.1592 447.8721 40.6373)" clip-path="url(#SVGID_2_)" fill="#FFF100" stroke="#231815" stroke-width="0.25" stroke-miterlimit="10" width="3" height="77.109"/>
-		<polygon clip-path="url(#SVGID_2_)"  stroke="#231815" stroke-width="0.25" fill="red" stroke-miterlimit="10" points="
+		<polygon clip-path="url(#SVGID_2_)" fill="red" stroke="#231815" stroke-width="0.25" stroke-miterlimit="10" points="
 			198.448,217.532 198.433,232.896 213.04,237.658 198.425,242.391 198.407,257.754 189.39,245.315 174.774,250.048 
 			183.817,237.627 174.798,225.189 189.405,229.952 		"/>
-		<polygon clip-path="url(#SVGID_2_)" v-bind:fill=color3 @click="todo(id3)" stroke="#231815" stroke-width="0.25" stroke-miterlimit="10" points="
+		<polygon clip-path="url(#SVGID_2_)" fill="red" stroke="#231815" stroke-width="0.25" stroke-miterlimit="10" points="
 			189.825,243.983 177.745,247.894 185.218,237.629 177.765,227.349 189.837,231.286 197.312,221.02 197.298,233.718 
 			209.37,237.654 197.292,241.565 197.278,254.263 		"/>
 	</g>
@@ -64,25 +66,25 @@
 		<polygon clip-path="url(#SVGID_4_)" fill="red" stroke="#231815" stroke-width="0.25" stroke-miterlimit="10" points="
 			397.735,217.532 397.751,232.896 383.144,237.658 397.761,242.391 397.776,257.754 406.794,245.315 421.411,250.048 
 			412.368,237.627 421.386,225.189 406.778,229.952 		"/>
-		<polygon clip-path="url(#SVGID_4_)" v-bind:fill=color4 @click="todo(id4)" stroke="#231815" stroke-width="0.25" stroke-miterlimit="10" points="
+		<polygon clip-path="url(#SVGID_4_)" fill="red" stroke="#231815" stroke-width="0.25" stroke-miterlimit="10" points="
 			406.36,243.983 418.44,247.894 410.966,237.629 418.419,227.349 406.347,231.286 398.872,221.02 398.886,233.718 386.813,237.654 
 			398.894,241.565 398.907,254.263 		"/>
 	</g>
 	<path fill="#FFFFFF" stroke="#231815" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M320.905,173.898
 		h-47.002l-1-19.667c0,0,12,2,24,2c12.002,0,25.002-2,25.002-2L320.905,173.898z"/>
-	<path fill="#FFFFFF" stroke="purple" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M272.903,154.23
+	<path fill="#FFFFFF" stroke="#231815" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M272.903,154.23
 		c0,0-3.141,9.932-7.949,14.02c-7.014,5.961-5.787,5.648-5.787,5.648l32.07,31.665l46.668-29.333
 		c-7.523-7.273-4.93-4.147-8.619-8.98c-3.682-4.824-7.715-13.02-7.715-13.02s-6.619,9.351-26,9
 		C277.62,160.915,272.903,154.23,272.903,154.23z"/>
-	<path v-bind:fill="color1" @click="todo(id1)" stroke="#231815" stroke-width="0.9722" stroke-miterlimit="10" d="M235.124,182.272l-22.084,8.847
+	<path fill="#FFF100" stroke="#231815" stroke-width="0.9722" stroke-miterlimit="10" d="M235.124,182.272l-22.084,8.847
 		c0,0,9.453,56.5,7.563,69c0.299,1.373,1.174,6.4,2.338,13.507l40.986-32.155L235.124,182.272z"/>
-	<path v-bind:fill=color5 @click="todo(id5)" stroke="#231815" stroke-miterlimit="10" d="M361.763,349.721l-65.859-19.153l-62.336,19.771
+	<path fill="#231815" stroke="#231815" stroke-miterlimit="10" d="M361.763,349.721l-65.859-19.153l-62.336,19.771
 		c0.199,2.61,0.299,4.756,0.268,6.28c-0.473,24-9.604,39.5-14.803,62.5c8.352,4.41,36.35,6.717,48.994,7.222
 		c15.236,0.608,29.613,0.278,29.613,0.278s14.377,0.33,29.615-0.278c12.643-0.505,40.643-2.812,48.992-7.222
 		c-5.199-23-14.33-38.5-14.803-62.5C361.413,354.978,361.532,352.61,361.763,349.721z"/>
-	<path v-bind:fill="color2" @click="todo(id2)" stroke="#231815" stroke-width="0.9722" stroke-miterlimit="10" d="M360.155,182.272l22.084,8.847
+	<path fill="#FFF100" stroke="#231815" stroke-width="0.9722" stroke-miterlimit="10" d="M360.155,182.272l22.084,8.847
 		c0,0-9.451,56.5-7.561,69c-0.301,1.373-1.176,6.4-2.34,13.507l-40.984-32.155L360.155,182.272z"/>
-	<path v-bind:fill=color5 @click="todo(id5)" stroke="#231815" stroke-miterlimit="10" d="M361.763,349.721c1.416-17.668,7.211-55.568,10.576-76.095
+	<path fill="#FFFFFF" stroke="#231815" stroke-miterlimit="10" d="M361.763,349.721c1.416-17.668,7.211-55.568,10.576-76.095
 		l-40.984-32.155l28.801-59.198l-26.596-10.653c0,0-5.408,10.842-15.365,15s-20.555,4-20.555,4s-10.598,0.158-20.555-4
 		s-15.365-15-15.365-15l-26.596,10.653l28.803,59.198l-40.986,32.155c3.406,20.765,9.297,59.32,10.627,76.713l62.336-19.771
 		L361.763,349.721z"/>
@@ -124,7 +126,7 @@
 		<path clip-path="url(#SVGID_6_)" fill="purple" stroke="#FFF100" stroke-width="3" stroke-miterlimit="10" d="M222.093,348.406"/>
 	</g>
 </g>
-<path v-bind:fill=color6 @click="todo(id6)" stroke="#231815" stroke-width="1.0377" stroke-miterlimit="10" d="M392.958,553.348
+<path fill="#231815" stroke="#231815" stroke-width="1.0377" stroke-miterlimit="10" d="M392.958,553.348
 	c-5.339-32.274-22.909-74.962-22.909-74.962l-71.554,5v1l-71.555-6c0,0-17.57,42.688-22.908,74.962
 	c-5.34,32.274-10.385,98.022-10.385,98.022s20.458,4.549,52.652,6.986c32.193,2.438,52.195,1.953,52.195,1.953
 	s20.002,0.484,52.195-1.953c32.194-2.438,52.652-6.986,52.652-6.986S398.297,585.622,392.958,553.348z"/>
@@ -143,60 +145,7 @@
 	c0.214,0.047,17.605,3.742,50.767,6.252c33.198,2.514,54.233,2.046,54.443,2.039c0.281,0.008,21.318,0.476,54.515-2.039
 	c33.161-2.51,50.155-6.205,50.369-6.252l0.543,3.177c-0.215,0.048-17.292,3.539-50.686,6.067
 	C329.041,654.382,311.273,654.638,303.231,654.638z"/>
-<path v-bind:fill=color6 @click="todo(id6)" stroke="#231815" stroke-width="1.0377" stroke-miterlimit="10" d="M366.946,466.348c0,0-39.57,7-70.238,7
+<path fill="#231815" stroke="#231815" stroke-width="1.0377" stroke-miterlimit="10" d="M366.946,466.348c0,0-39.57,7-70.238,7
 	c-30.666,0-66.768-7-66.768-7l-3,12.038c0,0,40.768,7,70.102,7c29.333,0,72.904-7,72.904-7L366.946,466.348z"/>
 <polygon fill="#231815" points="349.263,593.73 349.263,659.291 353.679,658.969 "/>
 </svg>
-
-</template>
-
-<script>
-export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-      color1:"white",
-      color2:"white",
-      color3:"white",
-      color4:"white",
-      color5:"white",
-      color6:"white",
-      id1:"id1",
-      id2:"id2",
-      id3:"id3",
-      id4:"id4",
-      id5:"id5",
-      id6:"id6"
-    }
-  },
-  props:['childColor'],
-  methods: {
-    todo: function(color) {
-    	var color = color
-    	console.log(color)
-        if(color == "id2"){
-        	this.color2=this.childColor
-        }else if(color == "id1"){
-        	this.color1=this.childColor
-        }else if(color == "id3"){
-        	this.color3=this.childColor
-        }else if(color == "id4"){
-        	this.color4=this.childColor
-        }else if(color == "id5"){
-			this.color5 = this.childColor
-        }else if(color == "id6"){
-        	this.color6 = this.childColor
-        }
-           }
-}
-  }
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-svg{
-	width: 100%;
-	height: 100%;
-}
-</style>

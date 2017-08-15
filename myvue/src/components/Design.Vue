@@ -1,13 +1,13 @@
 <template>
-<div id="design">
-	<div id="left">
+<div id="design" class="container-fluid">
+	<div id="left" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 		<component :is='currentView' keep-alive :child-color="childColor"></component>
 	</div>
-	<div id="right">
-		<div id="scoll">
+	<div id="right" class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+		<div id="scoll" class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
 			<div id="svg">
 				<div class="svg"  @click='tabToggle("tab01")'>
-					<img src="../../static/img/img/小黄人1.png" alt="" />				</div>
+					<img src="../../static/img/img/未标题-2-01.png" alt="" />				</div>
 				<div class="svg"  @click='tabToggle("tab02")'>
 					<img src="../../static/img/img/小黄人2.png" alt="" />				</div>
 				<div class="svg"  @click='tabToggle("tab03");'>
@@ -31,7 +31,7 @@
 			</div>
 		</div>
 	
-	<div id="button">
+	<div id="button" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<button @click="change(color.red)" v-bind:style="{'background-color':color.red}"></button>
 		<button @click="change(color.green)" v-bind:style="{'background-color':color.green}"></button>
 		<button @click="change(color.pink)" v-bind:style="{'background-color':color.pink}"></button>
@@ -119,7 +119,7 @@ export default {
 		change: function (color){
 			this.childColor=color
 			console.log(this.childColor)
-		}
+		} 
 	},
   components: {
     tab01: tab01,
@@ -131,6 +131,7 @@ export default {
     tab07: tab07,
     tab08: tab08,
     }
+  
 }
 </script>
 
@@ -139,17 +140,12 @@ export default {
 #left{
 	display: inline-block;
 	float: left;
-	width: 300px;
-	height: 300px;
 }
 #right{
-	width: 600px;
 	float: right;
-	height: 400px;
 	margin-right: 30px;
 }
 #scoll{
-	width: 600px;
 	height:200px;
 	overflow-x: scroll;
 	overflow-y: hidden;
@@ -159,7 +155,6 @@ export default {
 	height: 200px;
 }
 #button{
-	width: 600px;
 	height: 200px;
 	float:left;
 }
@@ -176,8 +171,8 @@ embed{
 }
 button{
 	float: left;
-	width: 50px;
-	height: 50px;
+	width:50px;
+	height:50px;
 	border:none;
 	background-color: white;
 }

@@ -41,15 +41,11 @@ export default {
   props:['childColor'],
   methods: {
     todo: function(color) {
-    	console.log(color)
     	var color = color
-    	console.log(color == "color")
         if(color == "id2"){
         	this.color=this.childColor
-        	console.log(1)
         }else if(color == "id1"){
         	this.color1=this.childColor
-        	console.log(2)
         }
 
         }
