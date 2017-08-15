@@ -1,49 +1,47 @@
 <template>
 <div id="design">
 	<div id="left">
-		<component :is='currentView' keep-alive></component>
+		<component :is='currentView' keep-alive :child-color="color"></component>
 	</div>
 	<div id="right">
 		<div id="scoll">
 			<div id="svg">
-				<div class="svg"  @click='tabToggle("tab01");'>
-					<object data="../../static/img/小黄人1-01.svg"></object>
-				</div>
-				<div class="svg"  @click='tabToggle("tab01");'>
-					<object data="../../static/img/小黄人1-01.svg"></object>
-				</div>
-				<div class="svg"  @click='tabToggle("tab01");'>
-					<object data="../../static/img/小黄人1-01.svg"></object>
+				<div class="svg"  @click='tabToggle("tab01")'>
+					<img src="../../static/img/img1.jpg" alt="" />				</div>
+				<div class="svg"  @click='tabToggle("tab02")'>
+					<img src="../../static/img/img2.jpg" alt="" />				</div>
+				<div class="svg"  @click='tabToggle("tab03");'>
+					333
 				</div>
 			</div>
 		</div>
 	
 	<div id="button">
-		<button v-on:click="aaa(obj)" v-bind:style="{'background-color':red}"></button>
-		<button v-bind:style="{'background-color':green}"></button>
-		<button v-bind:style="{'background-color':pink}"></button>
-		<button v-bind:style="{'background-color':yellow}"></button>
-		<button v-bind:style="{'background-color':blue}"></button>
-		<button v-bind:style="{'background-color':skyblue}"></button>
-		<button v-bind:style="{'background-color':gray}"></button>
-		<button v-bind:style="{'background-color':black}"></button>
-		<button v-bind:style="{'background-color':greenyellow}"></button>
-		<button v-bind:style="{'background-color':yellowgreen}"></button>
-		<button v-bind:style="{'background-color':orange}"></button>
-		<button v-bind:style="{'background-color':purple}"></button>
-		<button v-bind:style="{'background-color':palegreen}"></button>
-		<button v-bind:style="{'background-color':aqua}"></button>
-		<button v-bind:style="{'background-color':aquamarine}"></button>
-		<button v-bind:style="{'background-color':brown}"></button>
-		<button v-bind:style="{'background-color':burlywood}"></button>			
-		<button v-bind:style="{'background-color':cadetblue}"></button>
-		<button v-bind:style="{'background-color':chartreuse}"></button>
-		<button v-bind:style="{'background-color':coral}"></button>
-		<button v-bind:style="{'background-color':cornflowerblue}"></button>
-		<button v-bind:style="{'background-color':cyan}"></button>
-		<button v-bind:style="{'background-color':darkgoldenrod}"></button>
-		<button v-bind:style="{'background-color':firebrick}"></button>
-		<button v-bind:style="{'background-color':gold}"></button>
+		<button v-bind:style="{'background-color':color.red}"></button>
+		<button v-bind:style="{'background-color':color.green}"></button>
+		<button v-bind:style="{'background-color':color.pink}"></button>
+		<button v-bind:style="{'background-color':color.yellow}"></button>
+		<button v-bind:style="{'background-color':color.blue}"></button>
+		<button v-bind:style="{'background-color':color.skyblue}"></button>
+		<button v-bind:style="{'background-color':color.gray}"></button>
+		<button v-bind:style="{'background-color':color.black}"></button>
+		<button v-bind:style="{'background-color':color.greenyellow}"></button>
+		<button v-bind:style="{'background-color':color.yellowgreen}"></button>
+		<button v-bind:style="{'background-color':color.orange}"></button>
+		<button v-bind:style="{'background-color':color.purple}"></button>
+		<button v-bind:style="{'background-color':color.palegreen}"></button>
+		<button v-bind:style="{'background-color':color.aqua}"></button>
+		<button v-bind:style="{'background-color':color.aquamarine}"></button>
+		<button v-bind:style="{'background-color':color.brown}"></button>
+		<button v-bind:style="{'background-color':color.burlywood}"></button>			
+		<button v-bind:style="{'background-color':color.cadetblue}"></button>
+		<button v-bind:style="{'background-color':color.chartreuse}"></button>
+		<button v-bind:style="{'background-color':color.coral}"></button>
+		<button v-bind:style="{'background-color':color.cornflowerblue}"></button>
+		<button v-bind:style="{'background-color':color.cyan}"></button>
+		<button v-bind:style="{'background-color':color.darkgoldenrod}"></button>
+		<button v-bind:style="{'background-color':color.firebrick}"></button>
+		<button v-bind:style="{'background-color':color.gold}"></button>
 		<button></button>			
 		<button></button>
 	</div>
@@ -58,36 +56,39 @@ export default {
   name: 'Design',
   data () {
     return {
-    	sss:"red",
-      msg: 'Welcome to Your Vue.js App',
-      red:"red",
-      green:"green",
-      pink:"pink",
-      yellow:"yellow",
-      blue:"blue",
-      skyblue:"skyblue",
-      gray:"gray",
-      black:"black",
-      yellowgreen:"yellowgreen",
-      greenyellow:"greenyellow",
-      white:"white",
-      palegoldenrod:'palegoldenrod',
-      orange: 'orange',
-	  purple:'purple',
-	  palegreen: 'palegreen',
-	  aqua: 'aqua',
-	  aquamarine:'aquamarine',
-	  brown:'brown',
-	  burlywood:'burlywood',
-	  cadetblue:'cadetblue',
-	  chartreuse:'chartreuse',
-	  coral:'coral',
-	  cornflowerblue:'cornflowerblue',
-	  cyan:'cyan',
-	  darkgoldenrod: 'darkgoldenrod',
-	  firebrick:'firebrick',
-	  gold:"gold",
-	  currentView: 'tab01'
+    	msg: 'Welcome to Your Vue.js App',
+    	currentView: 'tab01',
+    	color:{
+    	  sss:"red",
+	      red:"red",
+	      green:"green",
+	      pink:"pink",
+	      yellow:"yellow",
+	      blue:"blue",
+	      skyblue:"skyblue",
+	      gray:"gray",
+	      black:"black",
+	      yellowgreen:"yellowgreen",
+	      greenyellow:"greenyellow",
+	      white:"white",
+	      palegoldenrod:'palegoldenrod',
+	      orange: 'orange',
+		  purple:'purple',
+		  palegreen: 'palegreen',
+		  aqua: 'aqua',
+		  aquamarine:'aquamarine',
+		  brown:'brown',
+		  burlywood:'burlywood',
+		  cadetblue:'cadetblue',
+		  chartreuse:'chartreuse',
+		  coral:'coral',
+		  cornflowerblue:'cornflowerblue',
+		  cyan:'cyan',
+		  darkgoldenrod: 'darkgoldenrod',
+		  firebrick:'firebrick',
+		  gold:"gold",
+    	}
+    	
     }
   },
   methods: {
@@ -138,7 +139,7 @@ img{
 	height: 200px;
 	float: left;
 }
-object{
+embed{
 	width: 200px;
 	height: 200px;
 }

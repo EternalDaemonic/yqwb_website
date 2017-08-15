@@ -49,13 +49,7 @@ module.exports = {
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
       },
-      {
-        test: /\.svg$/,
-        loader: 'svg-sprite?' + JSON.stringify({
-          name: '[name]_[hash]',
-          prefixize: true
-        })
-      },
+        {test: /\.svg/, loader: 'svg-url-loader'},
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
         loader: 'url-loader',
