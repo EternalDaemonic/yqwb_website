@@ -178,48 +178,25 @@ button{
 	background-color: white;
 }
 
-@media (max-width: 640px){
-	body {
-scrollbar-face-color: #FF0000 ;
-scrollbar-highlight-color: #00FF00;
-scrollbar-darkshadow-color: #ff0000;
-scrollbar-3dlight-color: #ff0000;
-scrollbar-arrow-color: #ff0000;
-scrollbar-track-color: #ffcccc;
-scrollbar-darkshadow-color: #ffffff;
-}
+@media all screen and (min-width:320px) and (max-width: 640px) {
 	#left{
-		width: 170px;
-		margin-top: -30px;
+		width: 200px;
 	}
 	#right{
-		padding: 0;
-		width: 170px;
+		width: 300px;
 		height: 300px;
-		margin-right: 10px;
 	}
 	#scoll{
 		float: right;
-		width: 100px;
-		height: 300px;
-		overflow-x: hidden;
+		width: 120px;
+		height: 1000px;
 		overflow-y: scroll;
-	}
-	#svg{
-		width: 100px;
-		height: 2000px;
 	}
 	#button{
 		float: right;
-		padding: 0;
-		width: 50px;
-		height: 300px;
-		overflow-x: hidden;
-		overflow-y:scroll ;
-	}
-	button{
-		width: 50px;
-		height: 50px;
+		width: 20px;
+		height: 200px;
+		overflow-y: scroll;
 	}
 }
 </style>
