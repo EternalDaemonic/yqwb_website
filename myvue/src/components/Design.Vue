@@ -1,47 +1,62 @@
 <template>
 <div id="design">
 	<div id="left">
-		<component :is='currentView' keep-alive :child-color="color"></component>
+		<component :is='currentView' keep-alive :child-color="childColor"></component>
 	</div>
 	<div id="right">
 		<div id="scoll">
 			<div id="svg">
 				<div class="svg"  @click='tabToggle("tab01")'>
-					<img src="../../static/img/img1.jpg" alt="" />				</div>
+					<img src="../../static/img/img/小黄人1.png" alt="" />				</div>
 				<div class="svg"  @click='tabToggle("tab02")'>
-					<img src="../../static/img/img2.jpg" alt="" />				</div>
+					<img src="../../static/img/img/小黄人2.png" alt="" />				</div>
 				<div class="svg"  @click='tabToggle("tab03");'>
-					333
+					<img src="../../static/img/img/小黄人1-03.png"/>
+				</div>
+				<div class="svg"  @click='tabToggle("tab04");'>
+					<img src="../../static/img/img/小黄人1-04.png"/>
+				</div>
+				<div class="svg"  @click='tabToggle("tab05");'>
+					<img src="../../static/img/img/小黄人1-05.png"/>
+				</div>
+				<div class="svg"  @click='tabToggle("tab06");'>
+					<img src="../../static/img/img/小黄人1-06.png"/>
+				</div>
+				<div class="svg"  @click='tabToggle("tab07");'>
+					<img src="../../static/img/img/小黄人1-07.png"/>
+				</div>
+				<div class="svg"  @click='tabToggle("tab08");'>
+					<img src="../../static/img/img/小黄人1-08.png"/>
 				</div>
 			</div>
 		</div>
 	
 	<div id="button">
-		<button v-bind:style="{'background-color':color.red}"></button>
-		<button v-bind:style="{'background-color':color.green}"></button>
-		<button v-bind:style="{'background-color':color.pink}"></button>
-		<button v-bind:style="{'background-color':color.yellow}"></button>
-		<button v-bind:style="{'background-color':color.blue}"></button>
-		<button v-bind:style="{'background-color':color.skyblue}"></button>
-		<button v-bind:style="{'background-color':color.gray}"></button>
-		<button v-bind:style="{'background-color':color.black}"></button>
-		<button v-bind:style="{'background-color':color.greenyellow}"></button>
-		<button v-bind:style="{'background-color':color.yellowgreen}"></button>
-		<button v-bind:style="{'background-color':color.orange}"></button>
-		<button v-bind:style="{'background-color':color.purple}"></button>
-		<button v-bind:style="{'background-color':color.palegreen}"></button>
-		<button v-bind:style="{'background-color':color.aqua}"></button>
-		<button v-bind:style="{'background-color':color.aquamarine}"></button>
-		<button v-bind:style="{'background-color':color.brown}"></button>
-		<button v-bind:style="{'background-color':color.burlywood}"></button>			
-		<button v-bind:style="{'background-color':color.cadetblue}"></button>
-		<button v-bind:style="{'background-color':color.chartreuse}"></button>
-		<button v-bind:style="{'background-color':color.coral}"></button>
-		<button v-bind:style="{'background-color':color.cornflowerblue}"></button>
-		<button v-bind:style="{'background-color':color.cyan}"></button>
-		<button v-bind:style="{'background-color':color.darkgoldenrod}"></button>
-		<button v-bind:style="{'background-color':color.firebrick}"></button>
-		<button v-bind:style="{'background-color':color.gold}"></button>
+		<button @click="change(color.red)" v-bind:style="{'background-color':color.red}"></button>
+		<button @click="change(color.green)" v-bind:style="{'background-color':color.green}"></button>
+		<button @click="change(color.pink)" v-bind:style="{'background-color':color.pink}"></button>
+		<button @click="change(color.yellow)" v-bind:style="{'background-color':color.yellow}"></button>
+		<button @click="change(color.blue)" v-bind:style="{'background-color':color.blue}"></button>
+		<button @click="change(color.skyblue)" v-bind:style="{'background-color':color.skyblue}"></button>
+		<button @click="change(color.gray)" v-bind:style="{'background-color':color.gray}"></button>
+		<button @click="change(color.black)" v-bind:style="{'background-color':color.black}"></button>
+		<button @click="change(color.greenyellow)" v-bind:style="{'background-color':color.greenyellow}"></button>
+		<button @click="change(color.yellowgreen)" v-bind:style="{'background-color':color.yellowgreen}"></button>
+		<button @click="change(color.orange)" v-bind:style="{'background-color':color.orange}"></button>
+		<button @click="change(color.purple)" v-bind:style="{'background-color':color.purple}"></button>
+		<button @click="change(color.palegreen)" v-bind:style="{'background-color':color.palegreen}"></button>
+		<button @click="change(color.aqua)" v-bind:style="{'background-color':color.aqua}"></button>
+		<button @click="change(color.aquamarine)" v-bind:style="{'background-color':color.aquamarine}"></button>
+		<button @click="change(color.brown)" v-bind:style="{'background-color':color.brown}"></button>
+		<button @click="change(color.burlywood)" v-bind:style="{'background-color':color.burlywood}"></button>			
+		<button @click="change(color.cadetblue)" v-bind:style="{'background-color':color.cadetblue}"></button>
+		<button @click="change(color.chartreuse)" v-bind:style="{'background-color':color.chartreuse}"></button>
+		<button @click="change(color.coral)" v-bind:style="{'background-color':color.coral}"></button>
+		<button @click="change(color.cornflowerblue)" v-bind:style="{'background-color':color.cornflowerblue}"></button>
+		<button @click="change(color.cyan)" v-bind:style="{'background-color':color.cyan}"></button>
+		<button @click="change(color.darkgoldenrod)" v-bind:style="{'background-color':color.darkgoldenrod}"></button>
+		<button @click="change(color.firebrick)" v-bind:style="{'background-color':color.firebrick}"></button>
+		<button @click="change(color.gold)" v-bind:style="{'background-color':color.gold}"></button>
 		<button></button>			
 		<button></button>
 	</div>
@@ -52,6 +67,12 @@
 <script>
 	import tab01 from '@/components/tab01'
 	import tab02 from '@/components/tab02'
+	import tab03 from '@/components/tab03'
+	import tab04 from '@/components/tab04'
+	import tab05 from '@/components/tab05'
+	import tab06 from '@/components/tab06'
+	import tab07 from '@/components/tab07'
+	import tab08 from '@/components/tab08'
 export default {
   name: 'Design',
   data () {
@@ -87,27 +108,34 @@ export default {
 		  darkgoldenrod: 'darkgoldenrod',
 		  firebrick:'firebrick',
 		  gold:"gold",
-    	}
-    	
+    	},
+    	childColor:""
     }
   },
   methods: {
-    tabToggle: function(tabText) {
-        this.currentView = tabText
-        }
-           },
+    	tabToggle: function(tabText) {
+        	this.currentView = tabText
+       		},
+		change: function (color){
+			this.childColor=color
+			console.log(this.childColor)
+		}
+	},
   components: {
     tab01: tab01,
-    tab02: tab02
+    tab02: tab02,
+    tab03: tab03,
+    tab04: tab04,
+    tab05: tab05,
+    tab06: tab06,
+    tab07: tab07,
+    tab08: tab08,
     }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-img{
-	width: 30%;
-}
 #left{
 	display: inline-block;
 	float: left;
@@ -118,6 +146,7 @@ img{
 	width: 600px;
 	float: right;
 	height: 400px;
+	margin-right: 30px;
 }
 #scoll{
 	width: 600px;
@@ -134,10 +163,12 @@ img{
 	height: 200px;
 	float:left;
 }
-.svg{
-	width: 200px;
-	height: 200px;
+#svg img:first-child{
+	margin-top: 50px;
 	float: left;
+}
+img{
+	width: 100px;
 }
 embed{
 	width: 200px;
