@@ -6,10 +6,10 @@ import Album from '@/components/Album'
 Vue.use(Router)
 
 export default new Router({
-  base: __dirname,
+  mode:"history",
   routes: [
     {
-      path: '/design',
+      path: '/dist',
       name: 'Design',
       component: Design
     },

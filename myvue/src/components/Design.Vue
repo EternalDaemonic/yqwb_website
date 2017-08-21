@@ -31,6 +31,10 @@
 		<component :is='currentView' keep-alive :child-color="childColor"></component>
 	</div>
 	<div id="right" class="col-lg-7 col-md-7">
+
+
+
+
 		<div id="button" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<button @click="change(color.red)" v-bind:style="{'background-color':color.red}"></button>
 		<button @click="change(color.green)" v-bind:style="{'background-color':color.green}"></button>
@@ -62,6 +66,9 @@
 	</div>
 	
 	</div>
+	
+	
+	aaaaa
 </div>
 </template>
 
@@ -163,6 +170,7 @@ scrollbar-darkshadow-color: #ffffff;
 	display: inline-block;
 	width: 400px;
 	float: left;
+	border: 2px solid red;
 }
 #right{
 	float: left;
