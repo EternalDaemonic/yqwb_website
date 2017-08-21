@@ -2,7 +2,7 @@
 <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
 <g>
-	<path v-bind:fill=color1 @click="todo(id1)" stroke="#231815" stroke-miterlimit="10" d="M133.892,445.756c0,0,5.232,2.27,14.898,5.324
+	<path v-bind:fill=color1 @click="getData" stroke="#231815" stroke-miterlimit="10" d="M133.892,445.756c0,0,5.232,2.27,14.898,5.324
 		c9.666,3.053,12.357,3.053,12.357,3.053l42.885-118.685l-43.34,7.021C145.886,397.156,133.892,445.756,133.892,445.756z"/>
 	<path v-bind:fill=color1 @click="todo(id1)" stroke="#231815" stroke-width="0.75" stroke-miterlimit="10" d="M225.333,275.778l-48.148,7.801
 		c-5.578,19.12-11.213,39.392-16.492,58.891l43.34-7.021l17.387-48.124L225.333,275.778z"/>
@@ -173,6 +173,7 @@ export default {
   props:['childColor'],
   methods: {
     todo: function(color) {
+    	this.$http
     	var color = color
     	console.log(color)
         if(color == "id2"){
@@ -188,8 +189,18 @@ export default {
         }else if(color == "id6"){
         	this.color6 = this.childColor
         }
-           }
-}
+    },
+    getData:function  () {
+    	 this.$http.get('http://192.168.1.116:8080/yqwb_website/photo/getAllPhoto?type=album').then(function(res) {
+//          console.log(res.data)
+          })
+    }   
+	},
+  mounted: function() {
+       this.$nextTick(function () {
+          this.getData();
+        })
+      },
   }
 </script>
 
@@ -198,5 +209,12 @@ export default {
 svg{
 	width: 100%;
 	height: 400px;
+}
+
+@media (max-width: 640px){
+	svg{
+	width: 100%;
+	height: 300px;
+}
 }
 </style>

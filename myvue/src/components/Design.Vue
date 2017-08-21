@@ -1,13 +1,9 @@
 <template>
-<div id="design" class="container-fluid">
-	<div id="left">
-		<component :is='currentView' keep-alive :child-color="childColor"></component>
-	</div>
-	<div id="right" class="col-lg-7 col-md-7">
-		<div id="scoll" class="col-lg-11 col-md-11">
-			<div id="svg">
+<div id="design">
+	<div id="left" class="col-lg-2 col-md-2">
+		<div id="svg">
 				<div class="svg"  @click='tabToggle("tab01")'>
-					<img src="../../static/img/img/未标题-2-01.png" alt="" />				</div>
+					<img src="../../static/img/img/未标题-1-01.jpg" alt="" />				</div>
 				<div class="svg"  @click='tabToggle("tab02")'>
 					<img src="../../static/img/img/小黄人2.png" alt="" />				</div>
 				<div class="svg"  @click='tabToggle("tab03");'>
@@ -30,6 +26,11 @@
 				</div>
 			</div>
 		</div>
+		
+	<div id="middle" class="col-lg-2 col-md-2">
+		<component :is='currentView' keep-alive :child-color="childColor"></component>
+	</div>
+	<div id="right" class="col-lg-7 col-md-7">
 		<div id="button" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<button @click="change(color.red)" v-bind:style="{'background-color':color.red}"></button>
 		<button @click="change(color.green)" v-bind:style="{'background-color':color.green}"></button>
@@ -59,6 +60,7 @@
 		<button></button>			
 		<button></button>
 	</div>
+	
 	</div>
 </div>
 </template>
@@ -136,28 +138,53 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+	body {
+scrollbar-face-color: #FF0000 ;
+scrollbar-highlight-color: #00FF00;
+scrollbar-darkshadow-color: #ff0000;
+scrollbar-3dlight-color: #ff0000;
+scrollbar-arrow-color: #ff0000;
+scrollbar-track-color: #ffcccc;
+scrollbar-darkshadow-color: #ffffff;
+}
+#design{
+	display: flex;
+	overflow: hidden;
+	text-align: center;
+	justify-content: center;
+	}
+	
 #left{
 	display: inline-block;
 	float: left;
 	display:inline;
-	width: 300px;
+}
+#middle{
+	display: inline-block;
+	width: 400px;
+	float: left;
 }
 #right{
-	float: right;
-	margin-right: 30px;
+	float: left;
+	width: 100px;
 }
 #scoll{
 	height:200px;
-	overflow-x: scroll;
-	overflow-y: hidden;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #svg{
-	width: 1000px;
-	height: 200px;
+	width: 150px;
+	height: 400px;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #button{
-	height: 200px;
+	width: 100px;
+	height: 400px;
 	float:left;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #svg img:first-child{
 	float: left;
@@ -166,14 +193,10 @@ export default {
 img{
 	width: 100px;
 }
-embed{
-	width: 200px;
-	height: 200px;
-}
 button{
 	float: left;
-	width:50px;
-	height:50px;
+	width:80px;
+	height:80px;
 	border:none;
 	background-color: white;
 }
@@ -188,6 +211,9 @@ scrollbar-arrow-color: #ff0000;
 scrollbar-track-color: #ffcccc;
 scrollbar-darkshadow-color: #ffffff;
 }
+	#design{
+		margin-top: 30px;
+	}
 	#left{
 		width: 170px;
 		margin-top: -30px;
@@ -196,24 +222,25 @@ scrollbar-darkshadow-color: #ffffff;
 		padding: 0;
 		width: 170px;
 		height: 300px;
-		margin-right: 10px;
+		margin-right: 20px;
 	}
 	#scoll{
 		float: right;
 		width: 100px;
-		height: 300px;
+		height: 400px;
 		overflow-x: hidden;
 		overflow-y: scroll;
 	}
 	#svg{
 		width: 100px;
-		height: 2000px;
+		height: 400px;
+		overflow-y: scroll;
 	}
 	#button{
 		float: right;
 		padding: 0;
 		width: 50px;
-		height: 300px;
+		height: 400px;
 		overflow-x: hidden;
 		overflow-y:scroll ;
 	}
